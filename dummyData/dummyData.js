@@ -1,6 +1,6 @@
 export const getDummyCategories = (length = 5) => {
     let result = [];
-    for(i = 0; i < length; i+=1){
+    for(let i = 0; i < length; i+=1){
         result.push({
             id: i+1,
             name: `Category ${i+1}`,
@@ -12,7 +12,7 @@ export const getDummyCategories = (length = 5) => {
 
 export const getDummyMeals = (category, categoryId, length = 5, beginIndex) => {
     let result = [];
-    for(i = 0; i < length; i+=1){
+    for(let i = 0; i < length; i+=1){
         result.push({
             id: beginIndex+i+1,
             categoryId,
